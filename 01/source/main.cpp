@@ -1,3 +1,10 @@
+//\==============================================================================
+// Advent of code 2022 Day 2
+// Question: https://adventofcode.com/2022/day/1
+// Gist:  Elves on the expedition carry x number of calories, which elf(ves) have the most
+// Input data: calorie values, elves separated by blank line
+//\==============================================================================
+
 #include <algorithm>
 #include <fstream>
 #include <iostream>
