@@ -105,10 +105,9 @@ int main( int argc, char* argv[] )
 	if ( !priority_values.empty() )
 	{
 		std::cout << "Number of packs incorrectly packed: " << priority_values.size() << std::endl;
-		//Part 1 - How many calories does the elf with the highest amount of calories have
+		//Part 1 - What is the priority score for items in the wrong compartments
 		std::cout << "The total priority score: " << total_priority_values << std::endl;
-		//Part 2 - what is the calorie total for the three elves with the most calories.
-		//accumulate the first three elements of the vector
+		//Part 2 - what is the value of the badge priority items for the elves in groups?
 		std::cout << "The sum of the three elves badge priority is: " << total_badge_priority_sum << std::endl;
 
 	}
