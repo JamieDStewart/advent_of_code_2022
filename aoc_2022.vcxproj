@@ -13,9 +13,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{CED0F094-9773-4C53-8945-30F98B3BD50A}</ProjectGuid>
+    <ProjectGuid>{5A2D80E2-1A9A-4104-B109-A6D5A6DBE349}</ProjectGuid>
     <RootNamespace>AoC202101</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>aoc_2022</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -78,10 +79,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\day_01.cpp" />
+    <ClCompile Include="source\day_02.cpp" />
+    <ClCompile Include="source\day_03.cpp" />
+    <ClCompile Include="source\day_04.cpp" />
+    <ClCompile Include="source\day_05.cpp" />
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="data\intput.txt" />
+    <ClInclude Include="source\days.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

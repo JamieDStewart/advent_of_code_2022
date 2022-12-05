@@ -5,6 +5,7 @@
 //        part 2 - every 3 elves have an item in common find the priority for that item
 // Input data: calorie values, elves separated by blank line
 //\==============================================================================
+#include "days.h"
 
 #include <algorithm>
 #include <fstream>
@@ -15,7 +16,7 @@
 #include <vector>
 
 
-int main( int argc, char* argv[] )
+void aoc::day_03()
 {
 	//Vector to store the priority values for each common type
 	std::vector< uint32_t > priority_values;
@@ -24,12 +25,12 @@ int main( int argc, char* argv[] )
 
 	//open the input file for reading
 	std::ifstream file_input;
-	file_input.open( "./data/input.txt" );
+	file_input.open( "./data/day_03_input.txt" );
 	if ( file_input.is_open() )
 	{
 		//Keep a map to score the characters as they appear in the input string
 		uint32_t full_inventory_map[256]{};
-		
+
 		//process each line of the file
 		for ( std::string line; std::getline( file_input, line ); )
 		{
@@ -78,9 +79,9 @@ int main( int argc, char* argv[] )
 			for ( const unsigned char c : unique_chars_line )
 			{
 				full_inventory_map[static_cast<uint32_t>(c)] += 1;
-				if( full_inventory_map[static_cast<uint32_t>(c)] == 3 ) //we have found the item in common
+				if ( full_inventory_map[static_cast<uint32_t>(c)] == 3 ) //we have found the item in common
 				{
-					
+
 					uint32_t offset = upper_map_start;
 					uint32_t base_score = 27;
 					if ( c > lower_map_start ) //this is a lower case letter
@@ -94,8 +95,8 @@ int main( int argc, char* argv[] )
 					break;
 				}
 			}
-			
-			
+
+
 		}
 		//close the input file
 		file_input.close();
@@ -111,7 +112,4 @@ int main( int argc, char* argv[] )
 		std::cout << "The sum of the three elves badge priority is: " << total_badge_priority_sum << std::endl;
 
 	}
-
-
-	return 0;
 }

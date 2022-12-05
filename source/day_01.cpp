@@ -1,9 +1,12 @@
 //\==============================================================================
-// Advent of code 2022 Day 2
+// Advent of code 2022 Day 1
 // Question: https://adventofcode.com/2022/day/1
 // Gist:  Elves on the expedition carry x number of calories, which elf(ves) have the most
 // Input data: calorie values, elves separated by blank line
 //\==============================================================================
+
+
+#include "days.h"
 
 #include <algorithm>
 #include <fstream>
@@ -14,14 +17,14 @@
 #include <vector>
 
 
-int main( int argc, char* argv[] )
+void aoc::day_01()
 {
 	//vector to store the total quantity of calories that an elf is carrying
 	std::vector< uint32_t > calories;
 
 	//open the input file for reading
 	std::ifstream file_input;
-	file_input.open( "./data/input.txt" );
+	file_input.open( "./data/day_01_input.txt" );
 	if ( file_input.is_open() )
 	{
 		//keep track of the total number of calories for the current elf
@@ -30,7 +33,7 @@ int main( int argc, char* argv[] )
 		//process each line of the file
 		for ( std::string line; std::getline( file_input, line ); )
 		{
-			
+
 			if ( line.length() > 0 )
 			{
 				//get the value from the string stream as an integer
@@ -61,11 +64,8 @@ int main( int argc, char* argv[] )
 		std::cout << "The Elf with the most calories has: " << calories[0] << std::endl;
 		//Part 2 - what is the calorie total for the three elves with the most calories.
 		//accumulate the first three elements of the vector
-		std::cout << "The sum of the three elves with the highest calories is: " << 
+		std::cout << "The sum of the three elves with the highest calories is: " <<
 			std::accumulate( calories.begin(), calories.begin() + 3, 0u ) << std::endl;
-		
+
 	}
-
-
-	return 0;
 }

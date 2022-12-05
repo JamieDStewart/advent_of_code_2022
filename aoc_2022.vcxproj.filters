@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\day_01">
+      <UniqueIdentifier>{cad6c1de-26fe-4536-99f5-9c0e8adf4652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\day_02">
+      <UniqueIdentifier>{17ee27a5-5379-49a3-b0b6-c3e682b2dcfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\day_03">
+      <UniqueIdentifier>{461debe4-9910-4a79-a0c3-9de84d30965f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\day_04">
+      <UniqueIdentifier>{7515fe1c-4e1d-4152-a0e7-5f2ce45342e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\day_05">
+      <UniqueIdentifier>{87002af9-1f4b-4c95-a069-9af9bc32eff3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_01.cpp">
+      <Filter>Source Files\day_01</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_02.cpp">
+      <Filter>Source Files\day_02</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_03.cpp">
+      <Filter>Source Files\day_03</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_04.cpp">
+      <Filter>Source Files\day_04</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_05.cpp">
+      <Filter>Source Files\day_05</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\days.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

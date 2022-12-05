@@ -6,13 +6,15 @@
 //             X, Y, Z dependent on part of the question 
 //\==============================================================================
 
+#include "days.h"
+
 #include <fstream>
 #include <iostream>
 #include <map>
 #include <string>
 
 
-int main( int argc, char* argv[] )
+void aoc::day_02()
 {
 	std::map< std::string, int32_t > part_1_hand_values;
 	//They Choose Rock
@@ -49,7 +51,7 @@ int main( int argc, char* argv[] )
 
 	//open the input file for reading
 	std::ifstream file_input;
-	file_input.open( "./data/input.txt" );
+	file_input.open( "./data/day_02_input.txt" );
 	if ( file_input.is_open() )
 	{
 		//process each line of the file
@@ -73,5 +75,4 @@ int main( int argc, char* argv[] )
 	//Part 2 - Using map of scores for X/Y/Z for part 2 to sum the scores
 	std::cout << "The sum of the scores for part_2 is: " << part_2_scores << std::endl;
 
-	return 0;
 }
