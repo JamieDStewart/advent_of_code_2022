@@ -24,6 +24,9 @@
     <Filter Include="Source Files\day_05">
       <UniqueIdentifier>{87002af9-1f4b-4c95-a069-9af9bc32eff3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\day_06">
+      <UniqueIdentifier>{4a390142-14dc-4e31-b499-cf7f57f72ab2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -43,6 +46,9 @@
     </ClCompile>
     <ClCompile Include="source\day_05.cpp">
       <Filter>Source Files\day_05</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_06.cpp">
+      <Filter>Source Files\day_06</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
