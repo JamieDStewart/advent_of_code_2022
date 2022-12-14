@@ -5,7 +5,7 @@
 int main( int argc, char* argv[] )
 {
 	//change this line to call the appropriate day to run that code
-	aoc::day_07();
+	aoc::day_11();
 
 	return 0;
 }

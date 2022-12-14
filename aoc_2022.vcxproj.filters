@@ -30,6 +30,18 @@
     <Filter Include="Source Files\day_07">
       <UniqueIdentifier>{14f03769-9e65-4d7e-9404-9d7f2b4f51fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\day_08">
+      <UniqueIdentifier>{c062c1d0-1f29-4c2a-98fc-02c5215a0e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\day_09">
+      <UniqueIdentifier>{c8db3020-8c18-4e6f-92b9-7127e037d45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\day_10">
+      <UniqueIdentifier>{e3424e28-b5c4-4254-b649-4a20c9e1c95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\day_11">
+      <UniqueIdentifier>{f4074c4b-cd9b-4206-80d8-edef7bea2ab4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -55,6 +67,18 @@
     </ClCompile>
     <ClCompile Include="source\day_07.cpp">
       <Filter>Source Files\day_07</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_08.cpp">
+      <Filter>Source Files\day_08</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_09.cpp">
+      <Filter>Source Files\day_09</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_10.cpp">
+      <Filter>Source Files\day_10</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_11.cpp">
+      <Filter>Source Files\day_11</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
