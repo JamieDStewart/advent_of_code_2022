@@ -13,5 +13,6 @@ namespace aoc
 	extern void day_09();
 	extern void day_10();
 	extern void day_11();
+	extern void day_12();
 
 }

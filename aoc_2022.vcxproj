@@ -94,10 +94,12 @@
     <ClCompile Include="source\day_09.cpp" />
     <ClCompile Include="source\day_10.cpp" />
     <ClCompile Include="source\day_11.cpp" />
+    <ClCompile Include="source\day_12.cpp" />
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\days.h" />
+    <ClInclude Include="source\vec2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

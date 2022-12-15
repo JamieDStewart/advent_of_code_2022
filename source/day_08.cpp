@@ -5,13 +5,12 @@
 // Input data: A matrix of tree heights represented by a single character 0-9
 //\==============================================================================
 #include "days.h"
+#include "vec2.h"
 
 #include <algorithm>
-#include <bitset>
 #include <fstream>
 #include <iostream>
 #include <numeric>
-#include <sstream>
 #include <string>
 #include <vector>
 
@@ -78,28 +77,6 @@ void populate_forest( int8_t* forest, int32_t cols, std::ifstream& stream )
 	}
 }
 
-
-struct vec2
-{
-	int32_t x;
-	int32_t y;
-
-	bool operator == ( const vec2& rhs ) const
-	{
-		return (x == rhs.x && y == rhs.y);
-	}
-
-	bool operator != ( const vec2& rhs ) const
-	{
-		return (x != rhs.x || y != rhs.y);
-	}
-
-	vec2 operator +( const vec2& rhs )const
-	{
-		return { x + rhs.x, y + rhs.y };
-	}
-
-};
 
 
 void scan_through_grid_section( const int8_t* grid, const vec2 start_pos, const vec2 direction, const vec2 size, std::vector<uint8_t>& visible_trees )

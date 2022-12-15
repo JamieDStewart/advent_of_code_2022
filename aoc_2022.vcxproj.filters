@@ -42,6 +42,12 @@
     <Filter Include="Source Files\day_11">
       <UniqueIdentifier>{f4074c4b-cd9b-4206-80d8-edef7bea2ab4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\day_12">
+      <UniqueIdentifier>{dda4bb43-262c-4c8d-afe6-3bad54e71888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utilities">
+      <UniqueIdentifier>{b4c091ea-7e8d-466e-8578-9764f0b453c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -80,10 +86,16 @@
     <ClCompile Include="source\day_11.cpp">
       <Filter>Source Files\day_11</Filter>
     </ClCompile>
+    <ClCompile Include="source\day_12.cpp">
+      <Filter>Source Files\day_12</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\days.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vec2.h">
+      <Filter>Source Files\utilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
