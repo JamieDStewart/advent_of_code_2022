@@ -48,6 +48,9 @@
     <Filter Include="Source Files\utilities">
       <UniqueIdentifier>{b4c091ea-7e8d-466e-8578-9764f0b453c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\day_13">
+      <UniqueIdentifier>{08da588f-c8ac-4adf-82f4-c1f449c67e8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -88,6 +91,9 @@
     </ClCompile>
     <ClCompile Include="source\day_12.cpp">
       <Filter>Source Files\day_12</Filter>
+    </ClCompile>
+    <ClCompile Include="source\day_13.cpp">
+      <Filter>Source Files\day_13</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
